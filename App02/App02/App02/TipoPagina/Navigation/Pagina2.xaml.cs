@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace App02.TipoPagina.Navigation
@@ -9,6 +10,11 @@ namespace App02.TipoPagina.Navigation
         public Pagina2()
         {
             InitializeComponent();
+        }
+
+        private void ChamarMaster(object sender, EventArgs eventArgs)
+        {
+            App.Current.MainPage = new Master.Master();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using App01_ConsultarCEP.Interface;
 using System;
-using System.Net;
 using Xamarin.Forms;
 
 namespace App01_ConsultarCEP

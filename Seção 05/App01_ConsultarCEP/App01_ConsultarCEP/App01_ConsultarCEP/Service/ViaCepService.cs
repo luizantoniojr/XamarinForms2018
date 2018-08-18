@@ -14,17 +14,22 @@ namespace App01_ConsultarCEP.Service
             if (ValidarCEP(cep))
             {
                 var url = string.Format(URLBase, cep);
-
-                using (var webClient = new WebClient())
+                try
                 {
-                    var retorno = webClient.DownloadString(url);
-                    var endereco = JsonConvert.DeserializeObject<ViaCepRetorno>(retorno);
-                    if (!endereco.Erro)
-                        return new Resultado() { Endereco = endereco };
-                    else
-                        return new Resultado() { MensagemErro = "CEP não encontrado" };
+                    using (var webClient = new WebClient())
+                    {
+                        var retorno = webClient.DownloadString(url);
+                        var endereco = JsonConvert.DeserializeObject<ViaCepRetorno>(retorno);
+                        if (!endereco.Erro)
+                            return new Resultado() { Endereco = endereco };
+                        else
+                            return new Resultado() { MensagemErro = "CEP não encontrado" };
+                    }
                 }
-
+                catch (WebException)
+                {
+                    return new Resultado() { MensagemErro = "Não foi possível acessar a internet" };
+                }
             }
 
             return new Resultado() { MensagemErro = "CEP inválido" };

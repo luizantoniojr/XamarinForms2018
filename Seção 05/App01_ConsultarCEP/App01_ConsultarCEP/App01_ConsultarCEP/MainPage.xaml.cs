@@ -31,10 +31,6 @@ namespace App01_ConsultarCEP
                 else
                     DisplayAlert("Atenção", resultado.MensagemErro, "Entendi");
             }
-            catch (WebException)
-            {
-                DisplayAlert("Atenção", "Não foi possível acessar a internet", "Entendi");
-            }
             catch (Exception)
             {
                 DisplayAlert("Atenção", "Ocorreu um erro inesperado, por favor, tente novamente mais tarde", "Entendi");

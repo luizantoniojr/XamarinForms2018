@@ -4,9 +4,11 @@
              x:Class="App02.TipoPagina.Navigation.Modal">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Eu sou um modal"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout HeightRequest="50">
+                <Label Text="Eu sou o Título"/>
+            </StackLayout>
+            <Label Text="Eu sou um modal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Fechar" Clicked="FecharModal"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

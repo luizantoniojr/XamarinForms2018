@@ -1,6 +1,6 @@
 ﻿namespace App01_ConsultarCEP.Model
 {
-    public class Endereco
+    public class ViaCepRetorno
     {
         public string Cep { get; set; }
         public string Logradouro { get; set; }
@@ -11,5 +11,6 @@
         public string Unidade { get; set; }
         public string IBGE { get; set; }
         public string GIA { get; set; }
+        public bool Erro { get; set; }
     }
 }

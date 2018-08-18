@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using App01_ConsultarCEP.Service;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -10,7 +11,7 @@ namespace App01_ConsultarCEP
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPage(new ViaCepService());
         }
 
         protected override void OnStart()

@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand">
             <Label Text="Tipo de Página 3" TextColor="Blue" BackgroundColor="LightSkyBlue" HorizontalOptions="CenterAndExpand" />
-            <Button Image="play.png" BackgroundColor="Transparent"/>
+            <Button Image="play.png" BackgroundColor="Transparent" Clicked="MudarPagina"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -157,4 +157,8 @@
       <Name>App02</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\play.png" />
+  </ItemGroup>
 </Project>

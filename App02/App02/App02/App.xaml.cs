@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App02.TipoPagina.Carousel;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace App02
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Introducao();
         }
 
         protected override void OnStart()

@@ -15,7 +15,7 @@ namespace App02.TipoPagina.Carousel
 
         private void MudarPagina(object sender, EventArgs eventArgs)
         {
-            App.Current.MainPage = new Pagina1();
+            App.Current.MainPage = new NavigationPage(new Pagina1());
         }
     }
 }

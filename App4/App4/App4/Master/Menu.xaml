@@ -19,11 +19,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <pages:Pefil/>
-            </x:Arguments>
-        </NavigationPage>
+        <pages:Pefil/>
     </MasterDetailPage.Detail>
 
 </MasterDetailPage>

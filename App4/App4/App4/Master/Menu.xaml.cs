@@ -16,12 +16,14 @@ namespace App4.Master
 
         public void IrParaPerfil(object sender, EventArgs arags)
         {
-            Navigation.PushAsync(new Pefil());
+            Detail = new Pefil();
+            IsPresented = false;
         }
             
         public void IrParaSobre(object sender, EventArgs arags)
         {
-            Navigation.PushAsync(new About());
+            Detail = new About();
+            IsPresented = false;
         }
     }
 }

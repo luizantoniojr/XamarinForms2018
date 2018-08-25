@@ -19,7 +19,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <pages:Pefil/>
+        <pages:Profile/>
     </MasterDetailPage.Detail>
 
 </MasterDetailPage>

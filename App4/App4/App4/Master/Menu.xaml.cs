@@ -16,7 +16,7 @@ namespace App4.Master
 
         public void IrParaPerfil(object sender, EventArgs arags)
         {
-            Detail = new Pefil();
+            Detail = new Profile();
             IsPresented = false;
         }
             

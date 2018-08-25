@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App4.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Pefil : ContentPage
+	public partial class Profile : ContentPage
 	{
-		public Pefil ()
+		public Profile ()
 		{
 			InitializeComponent ();
 		}

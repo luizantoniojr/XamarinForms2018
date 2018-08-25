@@ -16,13 +16,13 @@ namespace App4.Master
 
         public void IrParaPerfil(object sender, EventArgs arags)
         {
-            Detail = new Profile();
+            Detail = new NavigationPage(new Profile());
             IsPresented = false;
         }
             
         public void IrParaSobre(object sender, EventArgs arags)
         {
-            Detail = new About();
+            Detail = new NavigationPage(new About());
             IsPresented = false;
         }
     }

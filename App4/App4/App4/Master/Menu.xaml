@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:App4.Pages"
              x:Class="App4.Master.Menu">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#e9ebee">
+            <StackLayout>
+                <StackLayout BackgroundColor="LightBlue">
+                    <Image Source="Logo.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Spacing="20">
+                    <Button Text="Perfil" BackgroundColor="Transparent" Clicked="IrParaPerfil" />
+                    <Button Text="Sobre" BackgroundColor="Transparent" Clicked="IrParaSobre" />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:Pefil/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
